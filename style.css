@@ -298,5 +298,64 @@ body{
 #page5{
     min-height: 100vh;
     width: 100%;
-    padding: 5vw 0;
+    position: relative;
+}
+
+.elemt1{
+    white-space: nowrap;
+    margin-bottom: -2vw;
+}
+
+.elemt1 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: animet;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animet {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.elemt2{
+    white-space: nowrap;
+    margin-bottom: -2vw;
+}
+
+.elemt2 h1{
+    font-size: 7vw;
+    font-weight: 500;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    display: inline-block;
+    margin-right: 16px;
+    transform: translateX(-100% - 20px);
+    animation-name: animet;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.elemt1 span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
+}
+
+.elemt2 span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
 }
